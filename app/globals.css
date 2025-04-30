@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-ultramarine-50: #f0f3ff;
+  --color-ultramarine-100: #e4e8ff;
+  --color-ultramarine-200: #ccd4ff;
+  --color-ultramarine-300: #a4b0ff;
+  --color-ultramarine-400: #707bff;
+  --color-ultramarine-500: #373bff;
+  --color-ultramarine-600: #180fff;
+  --color-ultramarine-700: #0500ff;
+  --color-ultramarine-800: #0200da;
+  --color-ultramarine-900: #030099;
+  --color-ultramarine-950: #00057a;
+
+  --color-black-rock-50: #e4eeff;
+  --color-black-rock-100: #cfdfff;
+  --color-black-rock-200: #a8c3ff;
+  --color-black-rock-300: #749aff;
+  --color-black-rock-400: #3e5dff;
+  --color-black-rock-500: #1323ff;
+  --color-black-rock-600: #000aff;
+  --color-black-rock-700: #000aff;
+  --color-black-rock-800: #0009e4;
+  --color-black-rock-900: #0001b0;
+  --color-black-rock-950: #01002e;
+
+
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.visgl-map {
+  height: 100%;
+  width: 100%;
+}
+
+.TabsTrigger[data-state="active"] {
+  background-color: #01002e; /* ultramarine-950 or your preferred color */
+  color: white;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
