@@ -141,16 +141,16 @@ export default function ListingPage() {
     }
   }, [id, session])
 
-  useEffect(() => { 
-    if (data?.listing && trafficScore !== null) { 
-      const overallScore = calculateOverallScore()
-      if (overallScore !== null) {
-        axios.post(`/api/overall/${id}`, { overallScore })
-          .then(response => console.log("Score updated:", response.data))
-          .catch(error => console.error("Update error:", error))
-      }
-    }
-  }, [id, data, trafficScore])
+  // useEffect(() => { 
+  //   if (data?.listing && trafficScore !== null) { 
+  //     const overallScore = calculateOverallScore()
+  //     if (overallScore !== null) {
+  //       axios.post(`/api/overall/${id}`, { overallScore })
+  //         .then(response => console.log("Score updated:", response.data))
+  //         .catch(error => console.error("Update error:", error))
+  //     }
+  //   }
+  // }, [id, data, trafficScore])
 
   
   useEffect(() => {    
